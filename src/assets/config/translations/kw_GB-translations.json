@@ -1,0 +1,70 @@
+{
+  "message1": {
+    "WAITING": "kw_Klarna tender link SMS has been sent to customer phone",
+    "IN_PROGRESS": "kw_Customer is completing the Klarna Finance application",
+    "COMPLETED": "kw_Customer has completed the Klarna Finance application",
+    "CANCELLED": "kw_Customer has cancelled the Klarna Finance application"
+  },
+  "message2": {
+    "WAITING": "kw_Instruct customer to follow instructions on their phone",
+    "IN_PROGRESS": "kw_Instruct customer to follow instructions on their phone"
+  },
+  "message3": {
+    "WAITING": "kw_KLARNA PAYMENT IN PROGRESS",
+    "IN_PROGRESS": "kw_KLARNA PAYMENT IN PROGRESS",
+    "DISABLED": "kw_KLARNA PAYMENT CANCELLED",
+    "CANCELLED": "kw_KLARNA PAYMENT CANCELLED"
+  },
+  "message4": {
+    "INVALID": "kw_Invalid mobile phone number entered"
+  },
+  "title": "kw_Klarna Financing Tendering",
+  "ok": "kw_OK",
+  "pay": "kw_Pay",
+  "suspend": "kw_Suspend",
+  "cancel": "kw_Cancel",
+  "numbers": {
+    "0": "kw_0",
+    "1": "kw_1",
+    "2": "kw_2",
+    "3": "kw_3",
+    "4": "kw_4",
+    "5": "kw_5",
+    "6": "kw_6",
+    "7": "kw_7",
+    "8": "kw_8",
+    "9": "kw_9"
+  },
+  "backspace": "kw_Backspace",
+  "customerPhoneNumber": "kw_Customer Phone Number: ",
+  "suspendDialogTitle": "kw_Suspend Transaction",
+  "suspendDialogMessage": "kw_Are you sure you wish to suspend?",
+  "defaultError": {
+    "title": "kw_Klarna Financing not available",
+    "message": "kw_System Error"
+  },
+  "configError": {
+    "title": "kw_Klarna Financing not available",
+    "message": "kw_Configuration Error"
+  },
+  "networkError": {
+    "title": "kw_Klarna Financing not available",
+    "message": "kw_Network Error"
+  },
+  "authenticationError": {
+    "title": "kw_Klarna Financing not available",
+    "message": "kw_Authentication Error"
+  },
+  "serverError": {
+    "title": "kw_Klarna Financing not available",
+    "message": "kw_Server Error"
+  },
+  "distributionError": {
+    "title": "kw_Check the Phone number and try again",
+    "message": ""
+  },
+  "refundError": {
+    "title": "kw_Klarna Refund Failed",
+    "message": "kw_Press OK to return to the previous state"
+  }
+}

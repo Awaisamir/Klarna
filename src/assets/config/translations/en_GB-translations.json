@@ -1,0 +1,72 @@
+{
+  "message1": {
+    "WAITING": "Klarna tender link SMS has been sent to customer phone",
+    "IN_PROGRESS": "Customer is completing the Klarna Finance application",
+    "COMPLETED": "Customer has completed the Klarna Finance application",
+    "CANCELLED": "Customer has cancelled the Klarna Finance application"
+  },
+  "message2": {
+    "WAITING": "Instruct customer to follow instructions on their phone",
+    "IN_PROGRESS": "Instruct customer to follow instructions on their phone"
+  },
+  "message3": {
+    "WAITING": "KLARNA PAYMENT IN PROGRESS",
+    "IN_PROGRESS": "KLARNA PAYMENT IN PROGRESS",
+    "DISABLED": "KLARNA PAYMENT CANCELLED",
+    "CANCELLED": "KLARNA PAYMENT CANCELLED"
+  },
+  "message4": {
+    "INVALID": "Invalid mobile phone number entered"
+  },
+  "title": "Klarna Financing Tendering",
+  "ok": "OK",
+  "pay": "Pay",
+  "suspend": "Suspend",
+  "cancel": "Cancel",
+
+  "numbers": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "0": "0"
+  },
+  "backspace": "Backspace",
+  "customerPhoneNumber": "Customer Phone Number: ",
+  "suspendDialogTitle": "Suspend Transaction",
+  "suspendDialogMessage": "Are you sure you wish to suspend?",
+
+  "defaultError": {
+    "title": "Klarna Financing not available",
+    "message": "System Error"
+  },
+  "configError": {
+    "title": "Klarna Financing not available",
+    "message": "Configuration Error"
+  },
+  "networkError": {
+    "title": "Klarna Financing not available",
+    "message": "Network Error"
+  },
+  "authenticationError": {
+    "title": "Klarna Financing not available",
+    "message": "Authentication Error"
+  },
+  "serverError": {
+    "title": "Klarna Financing not available",
+    "message": "Server Error"
+  },
+  "distributionError": {
+    "title": "Check the Phone number and try again",
+    "message": ""
+  },
+  "refundError": {
+    "title": "Klarna Refund Failed",
+    "message": "Press OK to return to the previous state"
+  }
+}

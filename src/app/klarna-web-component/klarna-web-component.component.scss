@@ -1,0 +1,125 @@
+/*!
+ * Copyright (c) Flooid Limited 2020. All rights reserved.
+ * This source code is confidential to and the copyright of Flooid Limited ("Flooid"), and must not be
+ * (i) copied, shared, reproduced in whole or in part; or
+ * (ii) used for any purpose other than the purpose for which it has expressly been provided by Flooid under the terms of a license agreement; or
+ * (iii) given or communicated to any third party without the prior written consent of Flooid.
+ * Flooid at all times reserves the right to modify the delivery and capabilities of its products and/or services.
+ * "Flooid", "FlooidCore", "FlooidCommerce", "Flooid Hub", "PCMS", "Vision", "VISION Commerce Suite", "VISION OnDemand", "VISION eCommerce",
+ * "VISION Engaged", "DATAFIT", "PCMS DATAFIT" and "BeanStore" are registered trademarks of Flooid.
+ * All other brands and logos (that are not registered and/or unregistered trademarks of Flooid) are registered and/or
+ * unregistered trademarks of their respective holders and should be treated as such.
+ */
+
+body {
+  background-color: #D6DBDF;
+}
+
+tr:nth-child(even) {
+  background-color: #D6DBDF;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.container {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap:45px;
+  margin-bottom: 8px;
+}
+
+.klarna-header{
+  text-align: center;
+}
+
+.button{
+  border: none;
+  outline: none;
+  width: 110px;
+  color: #ffffff;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.create-button{
+  @extend .button;
+  background-color: #58486C;
+
+}
+
+.cancel-button{
+  @extend .button;
+  background-color: #D0002C;
+}
+
+button[disabled]{
+  cursor: not-allowed;
+  color:#666666;
+}
+
+
+.progress-bar {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.phone-number {
+  background-color: #D6DBDF;
+  border: none;
+  width: 150px;
+  border-bottom: 2px solid black;
+  margin: 8px;
+}
+
+.country-code {
+  background-color: #D6DBDF;
+  border: none;
+  width: 190px;
+  margin: 8px;
+  border-bottom: 2px solid black;
+}
+
+.customer-phone-country-code {
+  text-align: center;
+  font-size: 19px;
+}
+
+.message-text {
+  text-align: center;
+}
+
+.order-status {
+  text-align: center;
+}
+
+.spinner-container {
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+.invalid-phone-number {
+  color: #D0002C;
+}
+
+.dropdown-toggle {
+  background-color: #D6DBDF;
+  border: 2px solid #000000;
+}
+

@@ -1,0 +1,131 @@
+syntax: glob
+www/**
+.history/
+syntax: regexp
+^out-tsc$
+
+syntax: regexp
+^dist$
+
+syntax: regexp
+^.tmp
+
+syntax: regexp
+^.vs
+
+syntax: regexp
+^npm\-debug\.log
+
+syntax: regexp
+\.DS_Store$
+syntax: regexp
+\.orig$
+syntax: regexp
+^src/.*/.*js
+
+syntax: regexp
+^src/.*/.*map$
+
+syntax: regexp
+^coverage$
+syntax: regexp
+^junit$
+syntax: regexp
+^.idea$
+syntax: glob
+*.iml
+.sourcemaps/main.js.map
+syntax: regexp
+syntax: regexp
+^package.json.checksum$
+syntax: regexp
+syntax: regexp
+^package-lock.json.checksum$
+syntax: regexp
+^recreate-platform.bat$
+
+^src/assets/fonts
+^src/assets/images
+^src/assets/theme
+
+syntax: regexp
+^recreate-platform.sh$
+
+syntax: regexp
+^recreate-node-modules.bat$
+
+syntax: regexp
+^recreate-node-modules.sh$
+
+syntax: regexp
+^recreate-plugins.bat$
+
+syntax: regexp
+^recreate-plugins.sh$
+
+syntax: regexp
+^local-settings.json$
+
+syntax: regexp
+^releaseThemes.js$
+
+syntax: regexp
+^config.xml$
+
+syntax: regexp
+^hashes$
+
+config.xml.checksum
+config.xml.tmp
+package.json.tmp
+package-lock.json.tmp
+recreate-platforms.bat
+syntax: regexp
+^test/.*/*.js
+syntax: regexp
+^e2e/.*/*.js
+syntax: regexp
+^e2e/.*/*.map
+
+syntax: regexp
+^e2e/results$
+/src/polyfills.js
+syntax: regexp
+^/src/test.js$
+syntax: regexp
+^/src/mocks.js$
+packageJson.checksum
+app-settings.json
+.vs
+
+syntax: regexp
+^src/app/extension$
+
+syntax: regexp
+^releases/shoppers$
+syntax: regexp
+^releases/pvh$
+syntax: regexp
+^releases/petsmart$
+syntax: regexp
+^releases/tcp$
+syntax: regexp
+^releases/traderjoes$
+syntax: regexp
+^node_modules$
+syntax: regexp
+^.scannerwork$
+syntax: regexp
+^platforms$
+syntax: regexp
+^plugins$
+syntax: regexp
+^local_plugins$
+syntax: regexp
+^src/theme/theme\.scss$
+
+^src/assets/product
+default-local-settings.json
+output/
+src/app/app.module.ts
+^src/assets/config

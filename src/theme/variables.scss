@@ -1,0 +1,119 @@
+/*!
+ * Copyright (c) Flooid Limited 2020. All rights reserved.
+ * This source code is confidential to and the copyright of Flooid Limited ("Flooid"), and must not be
+ * (i) copied, shared, reproduced in whole or in part; or
+ * (ii) used for any purpose other than the purpose for which it has expressly been provided by Flooid under the terms of a license agreement; or
+ * (iii) given or communicated to any third party without the prior written consent of Flooid.
+ * Flooid at all times reserves the right to modify the delivery and capabilities of its products and/or services.
+ * "Flooid", "FlooidCore", "FlooidCommerce", "Flooid Hub", "PCMS", "Vision", "VISION Commerce Suite", "VISION OnDemand", "VISION eCommerce",
+ * "VISION Engaged", "DATAFIT", "PCMS DATAFIT" and "BeanStore" are registered trademarks of Flooid.
+ * All other brands and logos (that are not registered and/or unregistered trademarks of Flooid) are registered and/or
+ * unregistered trademarks of their respective holders and should be treated as such.
+ */
+
+
+//@import "theme";
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+/** Ionic CSS Variables **/
+:root {
+  --app-color-primary: #235ba8;
+  --app-color-custom-border: rgb(195, 195, 195);
+  --app-color-transparent-dark1: rgba(0, 0, 0, 0.8);
+  --app-color-transparent-dark2: rgba(0, 0, 0, 0.5);
+  --app-color-transparent-dark3: rgba(0, 0, 0, 0.35);
+  --app-color-transparent-dark4: rgba(0, 0, 0, 0.2);
+  --app-color-transparent-light1: rgba(255, 255, 255, 0.8);
+  --app-color-transparent-light2: rgba(255, 255, 255, 0.5);
+  --app-color-transparent-light3: rgba(255, 255, 255, 0.35);
+  --app-color-transparent-light4: rgba(255, 255, 255, 0.2);
+
+  --app-font-color-header-dark: #000000;
+  --app-font-color-header-light: #FFFFFF;
+  --app-font-color-paragraph-dark: rgba(0, 0, 0, 0.7);
+  --app-font-color-paragraph-light: rgba(255, 255, 255, 0.7);
+  --app-font-color-focus: white;
+  --app-font-color-valid: white;
+  --app-font-color-invalid: red;
+
+  --app-font-family-default: 'Roboto';
+
+  --app-font-size-header1: 30px;
+  --app-font-size-header2: 24px;
+  --app-font-size-header3: 18px;
+  --app-font-size-header4: 14px;
+  --app-font-size-header5: 12px;
+  --app-font-size-paragraph1: 14px;
+  --app-font-size-paragraph2: 12px;
+
+  --app-font-weight-thin: 100;
+  --app-font-weight-light: 200;
+  --app-font-weight-regular: 300;
+  --app-font-weight-medium: 400;
+  --app-font-weight-normal: 400;
+  --app-font-weight-thick: 600;
+
+  --app-device-phone: "only screen and (orientation: portrait) and (max-device-width: 413px)";
+  --app-device-tablet: "only screen and (orientation: landscape)";
+
+  --app-button-height: 60px;
+  --app-button-width: 60px;
+
+  --app-header-bar-height: 60px;
+  --app-stacked-nav-bar-height: 120px;
+  --app-nav-bar-height: 60px;
+
+  --app-text-padding-left: 20px;
+  --app-text-padding-right: 15px;
+
+  --app-default-border-width: 1px;
+
+  --app-mobile-message-font-size: 12px;
+
+  --highlight-color-valid: var(--app-font-color-valid);
+  --highlight-color-invalid: var(--app-font-color-invalid);
+  --highlight-color-focused: var(--app-font-color-focus);
+
+  --app-transaction-line-height: 60px;
+  --app-transaction-line-border-colour: var(--app-color-transparent-dark4);
+  --app-transaction-line-background-colour: var(--app-color-transparent-light2);
+  --app-transaction-line-selected-background-colour: var(--app-color-transparent-light1);
+  --app-transaction-line-image-width: var(--app-transaction-line-height);
+  --app-transaction-line-margin-right: 15px;
+
+  --app-transaction-refund-line-height: 70px;
+  --app-transaction-refund-line-width: var(--app-transaction-refund-line-height);
+  --app-transaction-refund-line-margin-right: 15px;
+  --app-transaction-refund-line-background-colour: var(--app-color-transparent-light2);
+  --app-transaction-refund-line-border-colour: var(--app-color-transparent-dark4);
+  --app-transaction-refund-line-selected-background-colour: var(--app-color-transparent-light1);
+  --app-transaction-refund-line-functions-menu-close-background-colour: var(--app-themable-color-accent2);
+  --app-transaction-refund-line-functions-menu-container-background-colour: var(--app-themable-color-accent1);
+
+  --app-transaction-search-line-height: 60px;
+  --app-transaction-search-line-margin-right: 15px;
+  --app-transaction-search-line-background-colour: var(--app-color-transparent-light2);
+  --app-transaction-search-line-border-colour: var(--app-color-transparent-dark4);
+  --app-transaction-search-line-selected-background-colour: var(--app-color-transparent-light1);
+  --app-transaction-search-line-functions-menu-close-background-colour: var(--app-themable-color-accent2);
+  --app-transaction-search-line-functions-menu-container-background-colour: var(--app-themable-color-accent1);
+
+  --app-distributed-voucher-line-border-colour: var(--app-color-transparent-dark4);
+  --app-distributed-voucher-line-background-colour: var(--app-color-transparent-light1);
+  --app-distributed-voucher-line-height: 60px;
+
+  --app-line-functions-menu-height: 60px;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

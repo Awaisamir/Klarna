@@ -1,0 +1,261 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+
+
+//@import "theme/variables.scss";
+
+
+* {
+  font-family: var(--app-font-family-default) !important;
+}
+.modal-wrapper {
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.left {
+  float: left;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.right {
+  float: right;
+}
+
+.use-hand-pointer {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.stack-top {
+  z-index: 200;
+}
+
+.default-font-settings {
+  font-style: normal;
+  font-variant: normal;
+  margin: 0;
+}
+
+#empty-button {
+  opacity: 1 !important;
+}
+
+#filler-button {
+  opacity: 1 !important;
+  color: transparent !important;
+}
+
+#filler-button span i {
+  color: transparent !important;
+}
+
+
+@media not all and (min-height: 600px) and (min-width: 768px) {
+  ion-modal ion-backdrop {
+    visibility: visible;
+    z-index: 0;
+  }
+}
+
+.modal-wrapper {
+  overflow: initial !important;
+}
+
+.md button {
+  text-transform: none;
+}
+
+.ios button {
+  text-transform: none;
+}
+
+.wp button {
+  text-transform: none;
+}
+
+.title-content {
+  text-transform: none;
+}
+
+.error-message-text {
+  color: var(--app-themable-color-danger);
+  font-size: var(--app-font-size-header4);
+}
+
+input.ng-invalid.ng-touched::placeholder {
+  color: var(--app-themable-color-danger) !important;
+}
+
+.message-box-title-style {
+  float: left;
+  line-height:50px;
+  padding-left: 20px;
+}
+
+.bordered-bar {
+  button {
+    border-style: solid;
+    border-color: var(--app-color-transparent-light3);
+    border-width: 1px 1px 0 0;
+    flex-basis: 100% !important;
+  }
+
+  button:first-child {
+    border-left: 1px solid var(--app-color-transparent-light3);
+  }
+
+  @media only screen and (orientation: portrait)  {
+    button:first-child {
+      border-left: none;
+    }
+  }
+
+  button[disabled] {
+    opacity: 1;
+    background-color: var(--app-color-transparent-light3);
+    border-style: none !important;
+  }
+}
+
+.proceed-bar {
+  width: 67%;
+  background-color: var(--app-themable-color-accent2);
+}
+
+.search-footer-bar {
+  width: 100%;
+  background-color: var(--app-themable-color-accent2);
+
+  button[disabled] {
+    opacity: 1;
+    background-color: var(--app-color-transparent-light3);
+    border-style: none !important;
+  }
+}
+
+.customer-name {
+  width:33%;
+}
+
+input {
+  outline: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+}
+
+.instructions-container {
+  width: 100%;
+  height: 60px;
+  min-height: 60px;
+  background-color: white;
+  display: flex;
+
+  button.switch-entry-type {
+    background: transparent;
+    font-weight: var(--app-font-weight-light);
+    float: right;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (orientation: landscape)  {
+  .modal-wrapper {
+    height: 600px !important;
+  }
+}
+
+@media only screen and (orientation: landscape)  {
+  .fullscreen-modal .modal-wrapper {
+    left: 0px !important;
+    top: 0px !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+.top-entry-bar {
+  background-color: var(--app-color-transparent-dark2) !important;
+  color: white;
+}
+
+.searchbar-input {
+  font-size: var(--app-font-size-header3)!important;
+  font-weight: var(--app-font-weight-light) !important;
+  background: transparent;
+}
+
+ion-app {
+  background-color: transparent !important;
+}
+
+.open-menu-button {
+  height:100%;
+  margin:0px;
+  width:var(--app-button-width);
+  background: white;
+  color: var(--app-font-color-header-dark);
+}
+
+.menu-container {
+  float:left;
+  height:var(--app-button-height);
+  flex-grow: 100;
+  width:100%;
+  display:flex;
+  background: var(--app-color-transparent-light2);
+}
+
+.page-footer {
+  opacity: 0.9;
+  height: var(--app-button-height);
+  z-index: 3 !important;
+  display: flex;
+  width: 100%;
+  min-height: var(--app-button-height);
+  background-color: var(--app-themable-color-accent2);
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  width:100vw;
+}
+
+.disable-scroll {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.empty-list-message {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--app-font-color-paragraph-dark);
+  background-color: var(--app-font-color-paragraph-light);
+}

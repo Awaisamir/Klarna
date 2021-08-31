@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="27" time="93.485">
+ <testsuite name="Klarna Financing Web page" timestamp="2021-08-30T18:03:02" hostname="localhost" time="93.485" errors="0" tests="27" skipped="0" disabled="0" failures="1">
+  <testcase classname="Klarna Financing Web page" name="should display Klarna welcome message" time="0.206">
+   <failure type="toEqual" message="Expected &apos;Klarna Financing Tendering&apos; to equal &apos;Klarna Financinhg&apos;."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\DEV_FOLDER\klarna-web-component\e2e\src\spec\klarna-web-component.e2e-spec.ts:41:51)
+    at C:\Users\Admin\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\Admin\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\Admin\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\Admin\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\Admin\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Admin\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\Admin\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2974:25
+    at C:\Users\Admin\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7]]>
+   </failure>
+  </testcase>
+  <testcase classname="Klarna Financing Web page" name="should display mobile number text field" time="0.035" />
+  <testcase classname="Klarna Financing Web page" name="should display cancel button" time="0.053" />
+  <testcase classname="Klarna Financing Web page" name="should display pay button" time="0.053" />
+  <testcase classname="Klarna Financing Web page" name="should display the countrycode dropdown" time="0.273" />
+  <testcase classname="Klarna Financing Web page" name="should enter number using keypad" time="3.028" />
+  <testcase classname="Klarna Financing Web page" name="should validate suspend button is disabled" time="0.058" />
+  <testcase classname="Klarna Financing Web page" name="should suspend the klarna payment" time="10.429" />
+  <testcase classname="Klarna Financing Web page" name="should validate the invalid phone number error text and color" time="0.361" />
+  <testcase classname="Klarna Financing Web page" name="should validate the authentication error" time="0.484" />
+  <testcase classname="Klarna Financing Web page" name="should validate the server error" time="0.464" />
+  <testcase classname="Klarna Financing Web page" name="should validate the network error" time="0.441" />
+  <testcase classname="Klarna Financing Web page" name="should validate the distribution error" time="9.124" />
+  <testcase classname="Klarna Financing Web page" name="Create a new HPP session Step 2 server error" time="0.607" />
+  <testcase classname="Klarna Financing Web page" name="Create a new HPP session Step 2 network down" time="0.472" />
+  <testcase classname="Klarna Financing Web page" name="Create a new order step 5 server error" time="9.159" />
+  <testcase classname="Klarna Financing Web page" name="Create a new order step 5 network down " time="9.192" />
+  <testcase classname="Klarna Financing Web page" name="should terminate the process when customer cancel the payment " time="9.22" />
+  <testcase classname="Klarna Financing Web page" name="should validate the server error when capture order is not allowed" time="9.25" />
+  <testcase classname="Klarna Financing Web page" name="should validate the server error when no such order is found" time="9.212" />
+  <testcase classname="Klarna Financing Web page" name="should create and complete payment using different locale" time="8.974" />
+  <testcase classname="Klarna Financing Web page" name="should create payment" time="1.363" />
+  <testcase classname="Klarna Financing Web page" name="should display suspend button" time="0.049" />
+  <testcase classname="Klarna Financing Web page" name="should display pay button" time="0.042" />
+  <testcase classname="Klarna Financing Web page" name="should display waiting status after creating payment" time="0.026" />
+  <testcase classname="Klarna Financing Web page" name="should display in-progress status during completing the payment" time="3.021" />
+  <testcase classname="Klarna Financing Web page" name="should display completed status after completing the payment" time="3.018" />
+ </testsuite>
+</testsuites>

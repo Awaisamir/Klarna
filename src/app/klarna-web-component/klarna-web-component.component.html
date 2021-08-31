@@ -1,0 +1,64 @@
+<!--
+  ~ Copyright (c) Flooid Limited 2020. All rights reserved.
+  ~ This source code is confidential to and the copyright of Flooid Limited ("Flooid"), and must not be
+  ~ (i) copied, shared, reproduced in whole or in part; or
+  ~ (ii) used for any purpose other than the purpose for which it has expressly been provided by Flooid under the terms of a license agreement; or
+  ~ (iii) given or communicated to any third party without the prior written consent of Flooid.
+  ~ Flooid at all times reserves the right to modify the delivery and capabilities of its products and/or services.
+  ~ "Flooid", "FlooidCore", "FlooidCommerce", "Flooid Hub", "PCMS", "Vision", "VISION Commerce Suite", "VISION OnDemand", "VISION eCommerce",
+  ~ "VISION Engaged", "DATAFIT", "PCMS DATAFIT" and "BeanStore" are registered trademarks of Flooid.
+  ~ All other brands and logos (that are not registered and/or unregistered trademarks of Flooid) are registered and/or
+  ~ unregistered trademarks of their respective holders and should be treated as such.
+  -->
+<div [ngStyle]="{'background-image': isMockMode() ? 'url(\'./assets/mockMode.jpg\')' : ''}">
+<h2 class="klarna-header" id="titleText">{{getTitle()}}</h2>
+<div class="customer-phone-country-code" [hidden]='elementHidden'>
+  <label class="phone-number-label" id="mobileNumber">{{getCustomerPhoneNumberText()}} </label><br>
+  <select class="country-code" id="countryCode" class="btn contact-btn dropdown-toggle" (change)="setCountryCode($event)">
+    <option *ngFor="let item of countries" [value]="item" [selected]="item === getCountryCode()">
+      {{item}}
+    </option>
+  </select>
+  <input class="phone-number" #phoneBox (change)="0" id="phone-field" [(ngModel)]="phoneNumber">
+  <h4 class="invalid-phone-number" id="validPhoneNumber">{{getMessage4()}}</h4>
+</div>
+<app-modal id="custom-modal" [hidden]='elementHidden'>
+  <app-pin-pad (numberPressed)="onKeypadButtonPressed($event)" (deletePressed)="onKeypadDeleteButtonPressed($event)">
+  </app-pin-pad>
+</app-modal>
+
+<div class="message-text">
+  <h4 id="customerStatusText">{{getMessage1()}}</h4>
+  <h4 id="instructionsText">{{getMessage2()}}</h4>
+  <h4 id="paymentInProgressText">{{getMessage3()}}</h4>
+  <h4 id="errorTitleText">{{getErrorTitle()}}</h4>
+  <h4 id="errorMessageText">{{getErrorMessage()}}</h4>
+</div>
+<span style="margin: auto; display: table;">
+  <!--  <mat-spinner></mat-spinner>-->
+  <div class="spinner-container">
+    <div class="spinner-container" *ngIf="!errorOccurred">
+       <img class="progress-bar" [src]="imageSource" *ngIf="imageSource"/>
+    </div>
+    <ng-template [ngIf]="imageSource">
+      <h4 class="order-status" id="orderStatus">{{getStatus()}}</h4>
+    </ng-template>
+  </div>
+  <div class="button-container" [hidden]='elementHidden'>
+    <button class=cancel-button id="cancel-button" [disabled]='cancelButtonDisabled' (click)="closeBrowser()">
+      {{getCancel()}}
+    </button>
+    <button class="create-button" id="suspend-button" [disabled]='suspendButtonDisabled' (click)="suspendPayment()">
+      {{getSuspend()}}
+    </button>
+    <button class="create-button" id="pay-button" [disabled]='payButtonDisabled' (click)="showProgressBar();  handleKlarnaFinanceTransaction(phoneBox.value)">
+      {{getPay()}}
+    </button>
+  </div>
+    <div class="button-container" *ngIf='!okButtonHidden'>
+    <button class="create-button" id="message-ok-button" (click)="closeBrowserRefund()">
+      {{getOK()}}
+    </button>
+  </div>
+</span>
+</div>

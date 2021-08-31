@@ -1,0 +1,57 @@
+<!--
+  ~ Copyright (c) Flooid Limited 2021. All rights reserved.
+  ~ This source code is confidential to and the copyright of Flooid Limited ("Flooid"), and must not be
+  ~ (i) copied, shared, reproduced in whole or in part; or
+  ~ (ii) used for any purpose other than the purpose for which it has expressly been provided by Flooid under the terms of a license agreement; or
+  ~ (iii) given or communicated to any third party without the prior written consent of Flooid.
+  ~ Flooid at all times reserves the right to modify the delivery and capabilities of its products and/or services.
+  ~ "Flooid", "FlooidCore", "FlooidCommerce", "Flooid Hub", "PCMS", "Vision", "VISION Commerce Suite", "VISION OnDemand", "VISION eCommerce",
+  ~ "VISION Engaged", "DATAFIT", "PCMS DATAFIT" and "BeanStore" are registered trademarks of Flooid.
+  ~ All other brands and logos (that are not registered and/or unregistered trademarks of Flooid) are registered and/or
+  ~ unregistered trademarks of their respective holders and should be treated as such.
+  -->
+
+<br>
+<table class="center">
+  <tr>
+    <td>
+      <button id="pin-pad-button-1" class="keypad-number" (click)="keypadButtonPressed('1')" >1</button>
+    </td>
+    <td>
+      <button id="pin-pad-button-2" class="keypad-number" (click)="keypadButtonPressed('2')" >2</button>
+    </td>
+    <td>
+      <button id="pin-pad-button-3" class="keypad-number" (click)="keypadButtonPressed('3')" >3</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button id="pin-pad-button-4" class="keypad-number" (click)="keypadButtonPressed('4')" >4</button>
+    </td>
+    <td>
+      <button id="pin-pad-button-5" class="keypad-number" (click)="keypadButtonPressed('5')" >5</button>
+    </td>
+    <td>
+      <button id="pin-pad-button-6" class="keypad-number" (click)="keypadButtonPressed('6')" >6</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button id="pin-pad-button-7" class="keypad-number" (click)="keypadButtonPressed('7')" >7</button>
+    </td>
+    <td>
+      <button id="pin-pad-button-8" class="keypad-number" (click)="keypadButtonPressed('8')" >8</button>
+    </td>
+    <td>
+      <button id="pin-pad-button-9" class="keypad-number"(click)="keypadButtonPressed('9')" >9</button>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <button id="pin-pad-button-Back" class="keypad-number" (click)="keypadDeleteButtonPressed(' ')" >{{getBackspace()}}</button>
+    </td>
+    <td>
+      <button id="pin-pad-button-0" class="keypad-number" (click)="keypadButtonPressed('0')" >0</button>
+    </td>
+  </tr>
+</table>

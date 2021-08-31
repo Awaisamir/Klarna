@@ -1,0 +1,25 @@
+{
+  "npmPackages": [
+    {
+      "name": "@angular/cli",
+      "dir": "angular-cli",
+      "versions": ["9.1.9"]
+    },
+    {
+      "name": "protractor",
+      "versions": ["7.0.0"]
+    },
+    {
+      "name": "typescript",
+      "versions": ["3.8.3"]
+    }
+  ],
+  "sdkPackages": [],
+  "node": [
+    {
+      "versions": ["14.15.0"],
+      "restrictToOS": ["darwin"]
+    }
+  ],
+  "xcode": ["11.4"]
+}
